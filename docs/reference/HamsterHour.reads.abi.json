@@ -1,0 +1,269 @@
+[
+  {
+    "type": "function",
+    "name": "IMD",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "currentWindow",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "position",
+    "inputs": [
+      {
+        "name": "k",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct HamsterHour.Position",
+        "components": [
+          {
+            "name": "over",
+            "type": "uint256[2]",
+            "internalType": "uint256[2]"
+          },
+          {
+            "name": "sleep",
+            "type": "uint256[2]",
+            "internalType": "uint256[2]"
+          },
+          {
+            "name": "exactAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "guess",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "imdClaimed",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "jackpotClaimed",
+            "type": "bool",
+            "internalType": "bool"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "window",
+    "inputs": [
+      {
+        "name": "k",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct HamsterHour.Window",
+        "components": [
+          {
+            "name": "status",
+            "type": "uint8",
+            "internalType": "enum HamsterHour.Status"
+          },
+          {
+            "name": "startsAt",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "endsAt",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "line",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "result",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "pools",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "over",
+            "type": "uint256[2]",
+            "internalType": "uint256[2]"
+          },
+          {
+            "name": "sleep",
+            "type": "uint256[2]",
+            "internalType": "uint256[2]"
+          },
+          {
+            "name": "rewards",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "marketVoided",
+            "type": "bool[3]",
+            "internalType": "bool[3]"
+          },
+          {
+            "name": "paid",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "claimedWeight",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "distances",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "ties",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "rankRewards",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "rankClaimed",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "rankPaid",
+            "type": "uint256[3]",
+            "internalType": "uint256[3]"
+          },
+          {
+            "name": "rankCount",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "settler",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "teamCredit",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "reimbursement",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "reimbursed",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "jackpotAsset",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "jackpot",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "jackpotPaid",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "jackpotClaimed",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "requestId",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "windowTimes",
+    "inputs": [
+      {
+        "name": "k",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "startsAt",
+        "type": "uint64",
+        "internalType": "uint64"
+      },
+      {
+        "name": "endsAt",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]
